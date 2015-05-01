@@ -1,0 +1,29 @@
+<html>
+    <header>
+		<script type="text/javascript" src="js/AES/AES.js"></script>
+		<script type="text/javascript" src="js/webworkers.js"></script>
+		<script type="text/javascript" scr="js/fibonacci.js"></script>
+    </header>
+    <body>
+		<div>
+			<div style="float:left;">
+				<button id="fibonacciStartBtn" style="float:left;" onclick="startFibonacci();">Start Fibonacci</button>
+				<textarea id="dataFibonacci" style="float:left;height:292px;width:290px;"></textarea>
+			</div>
+			
+			<div style="float:right;">
+				<label style="float:left;clear:both;"> Data to be encrypted: </label>
+				<textarea id="encryptText" style="float:left;clear:both;width:400px;"></textarea>
+				<label style="float:left;clear:both;"> Encryption key: </label>
+				<textarea id="encryptKey" style="float:left;clear:both;width:400px;"></textarea>
+				<button id="encryptBtn" style="float:left;clear:both;" onclick="encryptData()";>Encrypt</button>
+				
+				<label style="float:left;clear:both;"> Encrypted data: </label>
+				<textarea id="encryptedText" style="float:left;clear:both;width:400px;"></textarea>
+				<label style="float:left;clear:both;"> Decrypted data: </label>
+				<button id="decryptBtn" style="float:left;clear:both;" onclick="decryptData()";>Decrypt</button>
+				<textarea id="decryptText" style="float:left;clear:both;width:400px;"></textarea>
+			</div>
+		</div>	
+    </body>
+</html>

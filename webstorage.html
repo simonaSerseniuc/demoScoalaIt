@@ -1,0 +1,39 @@
+<html>
+    <header>
+		<script type="text/javascript" src="js/webstorage.js"></script>
+
+    </header>
+    <body>
+		<div>
+			<p><b>Local Storage</b></p>
+			<textarea id="newLocalName"></textarea>			
+			<textarea id="newLocalValue" ></textarea>
+			<button id="setCookie" onclick="addNewLocal();">Add localStorage</button>
+		</div>
+		
+		<div>			
+			<p id="allLocal"></p>
+		</div>
+		
+		<div>		
+			<textarea id="deleteLocalName"></textarea>		
+			<button id="setCookie" onclick="deleteLocal();">Delete localStorage</button>
+		</div>
+		
+		<div>
+			<p><b>Sessions Storage</b></p>
+			<textarea id="newSessionName"></textarea>			
+			<textarea id="newSessionValue" ></textarea>
+			<button id="setCookie" onclick="addNewSessions();">Add sessionStorage</button>
+		</div>
+		
+		<div>			
+			<p id="allSession"></p>
+		</div>
+		
+		<div>				
+			<textarea id="deleteSessionName" ></textarea>	
+			<button id="setCookie" onclick="deleteSessions();">Delete sessionStorage</button>
+		</div>
+    </body>
+</html>
